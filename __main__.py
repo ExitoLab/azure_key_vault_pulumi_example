@@ -19,7 +19,6 @@ location = config.get("location")
 key_vault_name = config.get("key_vault_name")
 subscription_id = config.get("subscription_id")
 resource_group_name = config.get("resource_group_name")
-nginx_config_url = config.get("nginx_config_url")
 vm_publisher = config.get("vm_publisher")
 vm_offer = config.get("vm_offer")
 vm_sku = config.get("vm_sku")
@@ -37,7 +36,6 @@ key_vault_id = f"/subscriptions/{subscription_id}/resourceGroups/{resource_group
 # Get the username and password from Azure Key Vault
 admin_username = azure.keyvault.get_secret(name="adminUsername",key_vault_id=key_vault_id)
 admin_password = azure.keyvault.get_secret(name="adminPassword",key_vault_id=key_vault_id)
-git_token = azure.keyvault.get_secret(name="gitToken",key_vault_id=key_vault_id)
 
 # Check if the secrets are empty or invalid
 if not admin_username or not admin_password or not git_token:
