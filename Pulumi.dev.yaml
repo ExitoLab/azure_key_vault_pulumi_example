@@ -1,0 +1,11 @@
+config:
+  azure_key_vault_pulumi_example:location: eastus
+  azure_key_vault_pulumi_example:environment: dev
+  azure_key_vault_pulumi_example:key_vault_name: demmo
+  azure_key_vault_pulumi_example:subscription_id: 123-3-3-3=33
+  azure_key_vault_pulumi_example:resource_group_name: demo-dev-rg
+  azure_key_vault_pulumi_example:vm_publisher: Canonical
+  azure_key_vault_pulumi_example:vm_offer: 0001-com-ubuntu-server-jammy
+  azure_key_vault_pulumi_example:vm_sku: 22_04-lts
+  azure_key_vault_pulumi_example:vm_version: latest
+  azure_key_vault_pulumi_example:vm_name: demoVM
